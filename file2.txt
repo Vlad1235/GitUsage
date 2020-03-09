@@ -1,0 +1,18 @@
+public class Sigleton {
+    private static Sigleton instance;
+    private String value;
+
+    private Sigleton(String value) {
+        this.value=value;
+    }
+
+/// user2 - deleted code.
+
+    public static Sigleton getInstance(String value){
+        if (instance==null){
+            instance = new Sigleton(value);
+        }
+        return instance;
+    }
+
+}
